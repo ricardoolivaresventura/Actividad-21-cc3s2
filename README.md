@@ -45,3 +45,33 @@ Con las directivas podemos configurar un pipeline
 - Parallel: Especificar etapas que se ejecutan en paralelo
 
 # Commit pipeline
+El proceso de integración continua más básico se demonina commit pipeline
+Este proceso consta de las siguientes etapas:
+- Checkout: Esta etapa descarga el código fuente del repositorio
+- Compile: Esta etapa compila el código fuente.
+- Unite test: Esta etapa ejecuta un conjunto de pruebas unitarias
+
+# Creación de un repositorio de Github
+Crearemos un repositorio llamado calculador
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-github.PNG "")
+
+# Creando la etapa checkout
+- En esta etapa se descarga el código del repositorio.
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-checkout.PNG "")
+- Pulsamos en build now para ver si se ejecutó con éxito
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-checkout2.PNG "")
+
+# Etapa Compile
+## Creación de un proyecto Java Spring Boot
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-code.PNG "")
+## Pushing el código a Github
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-repo.PNG "")
+
+Podemos compilar el proyecto localmente usando ./gradlew compileJava
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-compileJava.PNG "")
+
+## Creación de una etapa Compile
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-stage-compileJava.PNG "")
+
+
+
