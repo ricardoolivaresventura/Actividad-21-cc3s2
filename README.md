@@ -20,3 +20,4 @@ Un pipeline consta de dos elementos:
 # Veamos un primer ejemplo
 Como ejemplo, vamos a crear un pipeline llamado Helloworld que contendrá dos etapas:
 
+![Alt text][(https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/ac21-helloworld.PNG "")
