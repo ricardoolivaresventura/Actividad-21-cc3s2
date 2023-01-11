@@ -18,6 +18,11 @@ Un pipeline consta de dos elementos:
 - Stage: Es una separación lógica de pasos que agrupa un conjunto o secuencia de pasos conceptualmente distintas.
 
 # Veamos un primer ejemplo
-Como ejemplo, vamos a crear un pipeline llamado Helloworld que contendrá dos etapas:
+- Como ejemplo, vamos a crear un pipeline llamado Helloworld que contendrá dos etapas:
 
-![Alt text][(https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/ac21-helloworld.PNG "")
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/ac21-helloworld.PNG "")
+- Luego, pulsamos en Build Now y podemos ver los stages:
+
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/ac21-helloworld2.PNG "")
+
+# Secciones de la estructura del pipeline
