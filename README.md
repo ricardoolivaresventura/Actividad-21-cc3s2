@@ -102,5 +102,6 @@ Además, trae otros beneficios inmediatos, como los siguientes:
 - Cualquier cambio en el pipeline pasa por el proceso de revisión de código
 
 Debido a que Jenkinsfile está dentro del repositorio, entonces la fase de Checkout se puede eliminar, ya que, ya no es necesario descargar el código
+
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-jenkinsfile.PNG "")
 
