@@ -73,5 +73,34 @@ Podemos compilar el proyecto localmente usando ./gradlew compileJava
 ## Creación de una etapa Compile
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-stage-compileJava.PNG "")
 
+## Pruebas unitarias
+En esta etapa, comprobaremos si el código hace lo que esperamos que haga. Para ello, tendremos que hacer lo siguiente:
+1. Agrega el código fuente para la lógica del calculador
+2. Escribe una prueba unitaria para el código
+3. Agrega una etapa de Jenkins para ejecutar la prueba unitaria
 
+## Creamos la lógica de negocios
+- Para ellos crearemos una clase llamada Calculator y CalculadorControler
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculadorJava.PNG "")
+
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculadorJava2.PNG "")
+
+- Escribiendo la prueba unitaria
+
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculadorTest.PNG "")
+
+## Creación de una etapa de prueba unitaria
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-unitest-stage.PNG "")
+
+## Jenkinsfile
+
+Hasta ahora hemos creado todo el código del pipeline directamente en Jenkins. Sin embargo, es recomendable crear un archivo llamado Jenkinsfile centro del propio repositorio, porque de esa manera podemos controlar su versionamiento.
+
+Además, trae otros beneficios inmediatos, como los siguientes:
+- Si Jenkins falla, la definición del pipeline no se pierde, porque está almacenado en el repositorio
+- Se almacena el historial de cambios del pipeline
+- Cualquier cambio en el pipeline pasa por el proceso de revisión de código
+
+Debido a que Jenkinsfile está dentro del repositorio, entonces la fase de Checkout se puede eliminar, ya que, ya no es necesario descargar el código
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/Actividad-21-cc3s2/main/calculador-jenkinsfile.PNG "")
 
